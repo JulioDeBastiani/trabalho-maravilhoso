@@ -14,7 +14,17 @@ parser.add_argument('-f', '--from', required=False, help='timestamp from where t
 ARGS = parser.parse_args()
 
 if __name__ == "__main__":
-    rec = (1, 'test 1'.encode('utf-8'), 'aaadddd'.encode('utf-8'), 'test 3'.encode('utf-8'), datetime.utcnow().timestamp(), 5)
-    b = struct.pack(TWEETS_FORMAT, *rec)
-    logger.debug(b)
-    logger.debug(len(b))
+    auth = tweepy.OAuthHandler('', '')
+    auth.set_access_token('', '')
+    api = tweepy.API(auth)
+
+    search_words = '#death'
+
+    tweets = tweepy.Cursor(api.search, q=search_words, lang='en').items(50)
+    for tweet in tweets:
+        logger.debug(tweet.text)
+
+    # rec = (1, 'test 1'.encode('utf-8'), 'aaadddd'.encode('utf-8'), 'test 3'.encode('utf-8'), datetime.utcnow().timestamp(), 5)
+    # b = struct.pack(TWEETS_FORMAT, *rec)
+    # logger.debug(b)
+    # logger.debug(len(b))
