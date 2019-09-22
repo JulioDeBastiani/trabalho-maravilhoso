@@ -15,5 +15,6 @@ O arquivo terá registros de tamanho fixo para representar os tweets. O registro
 1. mensagem, UTF-8 string com 280 caracteres (1120 bytes)
 1. lista de hashtags, UTF-8 string com 200 caracteres (800 bytes)
 1. data, datetime (8 bytes)
+1. retweets, uint (4 bytes)
 
-Tamanho total do registro: 2132 bytes
+Tamanho total do registro: 2140 bytes contando com o alinhamento
