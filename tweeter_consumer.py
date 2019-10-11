@@ -15,7 +15,7 @@ REQUEST_COUNT = 50
 
 def read_tweets(api, hashtag):
     logger.debug(f'hashtag: {hashtag}')
-    filename = os.path.join(RAW_DIR, f'{USER}_{datetime.utcnow().strftime("%H_%M_%S")}.raw')
+    filename = os.path.join(RAW_DIR, f'{USER}_{datetime.utcnow().strftime("%m_%d_%Y__%H_%M_%S")}.raw')
 
     with open(filename, "wb") as raw_file:
         tweets = tweepy.Cursor(api.search, q=hashtag).items(REQUEST_COUNT)
