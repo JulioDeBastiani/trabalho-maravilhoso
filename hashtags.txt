@@ -1,4 +1,3 @@
-//serie A
 #cap
 #athleticopr
 #athleticoparanaense
@@ -30,10 +29,6 @@
 #santos
 #saopaulo
 #vasco
-
-
-
-//serie B
 #americamineiro
 #americamg
 #botafogosp
