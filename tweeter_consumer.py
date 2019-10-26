@@ -9,9 +9,9 @@ from loguru import logger
 
 TWEETS_FORMAT = '19s200s1120sdI'
 RAW_DIR = 'raw'
-USER = 'julio'
+USER = 'leo'
 HASHTAGS_FILE = 'hashtags.txt'
-REQUEST_COUNT = 50
+REQUEST_COUNT = 1000
 
 def read_tweets(api, hashtag):
     logger.debug(f'hashtag: {hashtag}')
@@ -60,7 +60,7 @@ def main():
 
             for hashtag in hashtags:
                 read_tweets(api, hashtag)
-                time.sleep(60 * 60)
+                time.sleep(900)
     
     except KeyboardInterrupt:
         logger.debug("stopped executing")
