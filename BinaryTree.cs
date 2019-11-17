@@ -4,12 +4,12 @@ namespace trabalho_maravilhoso
 {
     public class BinaryTree<TData>
     {
-        private class None
+        private class Node
         {
             public string Key;
             public TData Data;
-            public None Left;
-            public None Right;
+            public Node Left;
+            public Node Right;
 
             public Node(string key, TData data)
             {
@@ -28,7 +28,7 @@ namespace trabalho_maravilhoso
         public BinaryTree()
         {
             _root = null;
-            _count;
+            _count = 0;
         }
 
         public void Insert(string key, TData data)
@@ -44,8 +44,8 @@ namespace trabalho_maravilhoso
 
             while (true)
             {
-                var diff = string.Compare(key, it.key);
-                
+                var diff = string.Compare(key, it.Key);
+
                 // new key is smaller than the current key
                 if (diff < 0)
                 {
@@ -77,19 +77,25 @@ namespace trabalho_maravilhoso
         public bool TryGet(string key, out TData data)
         {
             if (_root == null)
+            {
+                data = default(TData);
                 return false;
+            }
 
             var it = _root;
 
             while (true)
             {
-                var diff = string.Compare(key, it.key);
-                
+                var diff = string.Compare(key, it.Key);
+
                 // new key is smaller than the current key
                 if (diff < 0)
                 {
                     if (it.Left == null)
+                    {
+                        data = default(TData);
                         return false;
+                    }
 
                     it = it.Left;
                 }
@@ -97,7 +103,10 @@ namespace trabalho_maravilhoso
                 else if (diff > 0)
                 {
                     if (it.Right == null)
+                    {
+                        data = default(TData);
                         return false;
+                    }
 
                     it = it.Right;
                 }

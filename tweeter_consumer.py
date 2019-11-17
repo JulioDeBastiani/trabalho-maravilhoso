@@ -60,7 +60,7 @@ def main():
 
             for hashtag in hashtags:
                 read_tweets(api, hashtag)
-                time.sleep(900)
+                time.sleep(600)
     
     except KeyboardInterrupt:
         logger.debug("stopped executing")

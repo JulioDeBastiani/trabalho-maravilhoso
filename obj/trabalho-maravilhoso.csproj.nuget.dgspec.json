@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso\\trabalho-maravilhoso.csproj": {}
+    "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso-leocreginato-patch-1\\trabalho-maravilhoso.csproj": {}
   },
   "projects": {
-    "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso\\trabalho-maravilhoso.csproj": {
+    "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso-leocreginato-patch-1\\trabalho-maravilhoso.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso\\trabalho-maravilhoso.csproj",
+        "projectUniqueName": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso-leocreginato-patch-1\\trabalho-maravilhoso.csproj",
         "projectName": "trabalho-maravilhoso",
-        "projectPath": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso\\trabalho-maravilhoso.csproj",
+        "projectPath": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso-leocreginato-patch-1\\trabalho-maravilhoso.csproj",
         "packagesPath": "C:\\Users\\leocr\\.nuget\\packages\\",
-        "outputPath": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso\\obj\\",
+        "outputPath": "D:\\Google Drive\\UCS\\Ciência da Computação\\6º Semestre\\Organização de Arquivos\\trabalho-maravilhoso\\trabalho-maravilhoso-leocreginato-patch-1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
